@@ -8,22 +8,38 @@
 }
 
 #contenedor {
-  border: 1px solid #903;
   margin-left:auto;
   margin-right:auto;
   width:auto;
   background-color:#FFF;
-  padding: 5px;
 }
 
 header {
-  border: 1px solid #903;
   width:100%;
-  margin-bottom: 15px;
-  height: 150px;
+  height: 70px;
   background-color:rgb(43, 43, 41);
   overflow: hidden;
 }
+
+header .logo{
+  float: left;
+  margin-left: 640px;
+  margin-top: 20px;
+  width: 50px;
+}
+
+header .logo img{
+  width: 100%;
+}
+
+h3 {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+}
+
 section {
   border: 1px solid #903;
   width: 550px;
