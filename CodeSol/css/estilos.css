@@ -5,27 +5,38 @@
   margin:0px;
   padding:0px;
   font-family:'Courier New', Courier, monospace;
+  
 }
 
 #contenedor {
   margin-left:auto;
   margin-right:auto;
   width:auto;
-  background-color:#FFF;
+  
 }
+body{
 
+  background: #1c92d2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #def6f7, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #dcfaf8, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+
+}
 header {
   width:100%;
-  height: 80px;
-  background-color:rgb(43, 43, 41);
+  height: 70px;
+  background-color:white;
   overflow: hidden;
+  border: 3px solid transparent; 
+  border-image: linear-gradient(to bottom, #dff1f1 0%, #d1f1f5 100%) 1;
 }
 
 header .logo{
   float: left;
-  margin-left: 50px;
-  margin-top: 20px;
-  width: 50px;
+  margin-left: 39px;
+  margin-top: 0px;
+  width: 16%;
 }
 
 header .logo img{
@@ -33,41 +44,139 @@ header .logo img{
 }
 
 h3 {
-  color: #ffffff;
+  color: black;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
-  margin-top: 40px;
+  margin-top: 22px;
+  text-transform:uppercase;  
+  font-weight: bolder;
+}
+h2{
+
+  color: rgb(22, 61, 238) ;
+  font-weight:bold;
 }
 
+
 section {
-  width: 550px;
+  width: 79%;
   float: left;
-  height: 600px;
+  height: 100%;
   margin-left: 15px;
   margin-bottom: 15px;
+  
+}
+/* imagen de fondo en el home */
+#fondohome {
+  position: relative;
+
+}
+#fondohome img{
+  width: 650px;
+  float: left;
+}
+
+section .textogrande{
+
+  color:rgb(22, 61, 238);
+  text-transform: uppercase;
+  font-family: Lubalin,monospace;
+  font-weight: 400;
+  margin-top: 150px;
+
+
+}
+section .textohome{
+    
+  font-weight: 600;  
+  text-align: justify;
+}
+
+section .fotocontacto img{
+
+  width: 550px;
+  float: right;
+  margin-right: 150px;
+}
+section .fotoquienes img{
+
+  width: 300px;
+  margin-top: 20px;
+  margin-left:610px;
+}
+section .fotoserv1 img{
+
+  width: 400px;
+  float: left;
+  padding: 10px;
+}
+section .fotoserv2 img{
+
+  width: 400px;
+  float: right;
+  margin-top: 80px;
+}
+section .fotoserv3 img{
+
+  width: 500px;
+  float:right;
+  margin-top: 40px;
+}
+/* ---------- botones ------- */
+.boton1{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #00d693;
+  border-radius: 6px;
+  
+}
+.boton1:hover{  
+  background-color: #89bdee;
 }
 
 aside {
   margin-top: 20px;
   margin-right: 35px;
-  width: 300px;
+  width: 270px;
   float: right;
-  height: 600px;
-  margin-bottom: 15px;
+  height: 100%;
 }
+  
+aside .Noticias {
+  
+  text-align:justify;
+  overflow: scroll;
+}
+
+
+#imagennoticia img{
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
 
 /* ---------- footer ------- */
 footer {
   clear: both;
   width: 100%;
-  height: 150px;
-  background-color: rgb(43,43,41);
+  height: 125px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid transparent; 
+   border-image: linear-gradient(to bottom, #5e6363 0%, #d1f1f5 100%) 1;
 }
 
 /* personalizado del logo del footer */
 footer .logo{
-  width: 50px;
+  width: 150px;
   margin: 0 auto;
 }
 
@@ -80,7 +189,7 @@ footer .logo img{
 /* personalizado del texto del footer */
 footer #outro {
   text-align: center;
-  color: rgb(207, 131, 16);
+  color: rgb(6, 9, 10);
   font-size: 10px;
   margin-top: 10px;
   margin-right: 100px;
@@ -97,20 +206,26 @@ footer #outro {
 header .desplegable ul {
   display: flex;
   padding: 0;
-  margin-right: 100px;
+  margin-right: 50px;
   list-style: none;
   float:right;
 }
 
 header .desplegable a {
   display: block;
-  padding: 2em;
-  background-color: rgb(43,43,41);
+  padding: 20px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
   text-decoration: none;
   color: #191C26;
+  text-transform: uppercase;
+  font-family: ProximaNova-Regular,sans-serif;
+  font-weight: bold;
+  font-weight: 750;
+  text-align: center;
 }
 header .desplegable a:hover {
-  background-color: rgb(27, 40, 97);
+  background-color: rgb(217, 232, 245);
 }
 header .desplegable ul li ul {
   display: none;
@@ -119,21 +234,30 @@ header .desplegable ul li a:hover + ul, header .desplegable ul li ul:hover {
   display: block;
 }
 
+header .desplegable .twitter img{
+
+  width: 20px;
+}
+header .desplegable .instagram img{
+
+  width: 20px;
+}
+
 /* colores personalizados del menu */
 header .desplegable #home a {
-  color: rgb(207, 131, 16);
+  color: rgb(0, 0, 0);
 } 
 
 header .desplegable #nosotros a {
-  color: rgb(16, 121, 207);
+  color: rgb(62, 200, 241);
 }
 
 header .desplegable #quienes a {
-  color: rgb(255, 251, 38);
+  color: rgb(12, 72, 238);
 }
 
 header .desplegable #actuacion a {
-  color: rgb(207, 16, 16);
+  color: #00d693;
 }
 
 header .desplegable #contacto a {
@@ -160,5 +284,59 @@ nav li ul li ul {
   top:0px;
 }
 
-
 /*  ------------ fin menu ------------------ */
+
+
+/* diseño responsive */
+
+
+@media screen and (max-width: 1300px){
+  section{
+      width:1000px;
+  }
+
+  body{
+      background-color: lightgray;
+  }
+}
+
+@media screen and (max-width: 900px){
+  section{
+    width:1000px;
+}
+  body{
+      background-color: lightblue;
+  }
+}
+
+/*ipad vertical*/
+@media screen and (width: 1536px){
+  
+  body{
+      background-color: lightcoral;
+  }
+}
+
+/*ipad horizontal*/
+@media screen and (width: 2048px){
+ 
+  body{
+      background-color: lightsalmon;
+  }
+}
+
+/*iphone vertical*/
+@media screen and (width: 1185px){
+
+  body{
+      background-color: lightslategray;
+  }
+}
+
+/*iphone horizontal*/
+@media screen and (width: 2436px){
+ 
+  body{
+      background-color: lightpink;
+  }
+}
